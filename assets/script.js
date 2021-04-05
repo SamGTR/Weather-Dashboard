@@ -1,10 +1,12 @@
+// JS file when using search button
+
 // Variables declared
 var searchEl = document.querySelector("#search");
 var cityEl = document.querySelector("#city");
 var divEl = document.querySelector(".buttonAppend");
 var localIndex = 0; 
 
-// Function weather data
+// Function for weather data
 function history(event){
     event.preventDefault();
     var cityName = cityEl.value;
@@ -19,7 +21,7 @@ function history(event){
         alert("Please enter a city name!");
     } else{
 
-        // Fetching data using url
+        // Fetching current weather data using url
         fetch(currentUrl)
             .then(function (response) {
                 return response.json();
@@ -59,6 +61,7 @@ function history(event){
                 
                 // Url for UV index data
                 var uvUrl = `https://api.openweathermap.org/data/2.5/uvi?appid=d34fae866484e6c9a70d899e387126e7&lat=${data.coord.lat}&lon=${data.coord.lon}`;
+                // Fetching UV index data
                 fetch(uvUrl)
                     .then(function (response) {
                         return response.json();
