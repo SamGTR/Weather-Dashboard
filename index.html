@@ -4,40 +4,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the application -->
     <title>Weather dashboard</title>
+    <!-- Linking related resources -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" SameSite="Strict">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
         <h1>Weather Dashboard</h1>
     </header>
 
     <div class="container">
- 
+        
+        <!-- Search bar -->
         <aside>
             <section class="space">
                 <h3>Search for a City:</h3>
+                
                 <div class="search">
+
+                    <!-- Search input and button -->
                     <form class="searchForm">
                         <input type="text" id="city" placeholder="City Name..." name="search">
                         <button type="submit" id="search1"><i class="fa fa-search"></i></button>
                     </form>
+
                 </div> 
+
+                <!-- Search history append -->
                 <div class="buttonAppend"></div>
             </section>
         </aside>
 
+        <!-- Weather Details -->
         <main class="weatherCont">
+
+            <!-- Current weather -->
             <div class="currentTemp">
                 
             </div>
+
+            <!-- Five day forecast -->
             <div class="fiveDayCard">
             </div>
            
 
         </main>
     </div>  
+
+    <!-- Jquery and Javascripts -->
     <script
     type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>  
@@ -46,4 +67,5 @@
     <script type="text/javascript" src="./assets/click.js"></script>
 
 </body>
+
 </html>
