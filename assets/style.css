@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+
+/* Setting body margin and fonts */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}  
+
+/* Header background set */
+header{
+    text-align: center;
+    background-color: rgb(59, 57, 57);
+    color: white;
+    padding: 5px;
+    font-size: x-large;
+}
+
+aside{
+    background-color: rgb(228, 231, 231);
+    padding:2px 0 10px 0;
+}
+
+input{
+    height: 38px;
+    width: 50%;
+}
+
+.searchForm button {
+    width: 50px;
+    height: 5%;
+    padding: 5px;
+    background: #1c87df;
+    color: white;
+    font-size: 17px;
+    border: 5px solid rgb(115, 178, 236);
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+/* Hover effect for search button */
+.searchForm button:hover {
+    background: #09599b;
+}
+
+.space {
+  margin-left: 10px;
+}
+
+.buttonAppend{
+  margin-top: 10px;
+}
+
+/* Search history button styles */
+.cityButtonEl{
+  border: 1px solid rgb(181, 185, 185); 
+  width:62%; 
+  padding: 10px 0 10px 20px;  
+  font-size: 20px; margin: 0;
+  text-align: left;
+}
+
+.container{
+  display: grid;
+  grid-template-columns:30% 70%;  
+}
+
+.weatherCont{
+  margin-left: 1%; 
+}
+
+/* Current day data styling */
+.currentTemp{
+  max-width: 70em; 
+  padding-left: 20px;
+}
+
+/* Five day forecast data styling */
+.fiveDayStyle{
+  background-color: rgb(27, 96, 214);
+  border: 2px solid rgb(20, 76, 218);
+  border-radius: 5px;
+  color: white;
+  margin: 10px;
+  padding: 0 20px ;
+  float: left;
+}
+
+.uvPadding{
+  padding-bottom: 20px;
+}
+
+/* Media query for smaller screen */
+@media screen and (max-width: 900px) {
+  .container{
+    display:block;
+  }
+}
