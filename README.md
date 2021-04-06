@@ -15,23 +15,23 @@ This application is developed using HTML, CSS and Javascript files. The features
 
 - On running the application, user is presented with a browser layout showing the wetaher dashboard heading and search area with a button.
 
-![Application homepage.](./assets/images/1.png)
+<kbd> ![Application homepage.](./assets/images/1.png)</kbd>
 
 - Then the user need to enter the city name in search area and click the search button.
 
-![City name entered.](./assets/images/2.png)
+<kbd> ![City name entered.](./assets/images/2.png)</kbd>
 
 - When the user enters city name and click the search button, the current weather and five day forecast is displayed. Further, the city name is also added and displayed as search history.
 
-![Weather data displayed.](./assets/images/3.png)
+<kbd> ![Weather data displayed.](./assets/images/3.png)</kbd>
 
 - When the user enters another city name and click the search button, the current weather and five day forecast for that new search is displayed. Further, the city name is added and displayed as search history below the first city searched.
 
-![Weather data displayed.](./assets/images/4.png)
+<kbd> ![Weather data displayed.](./assets/images/4.png)</kbd>
 
 - If the user wants to see the weather of one of the city recently searched, then she/he can directly click on that city name in search history and the weather data would be displayed.
 
-![Weather data displayed.](./assets/images/5.png)
+<kbd> ![Weather data displayed.](./assets/images/5.png)</kbd>
 
 ## Technology
 
