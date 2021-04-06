@@ -21,7 +21,7 @@ This application is developed using HTML, CSS and Javascript files. The features
 
 <kbd> ![City name entered.](./assets/images/2.png)</kbd>
 
-- When the user enters city name and click the search button, the current weather and five day forecast is displayed. Further, the city name is also added and displayed as search history.
+- When the user enters city name and click the search button, the current weather and five day forecast is displayed. Further, the city name is also added and displayed as search history. The UV index is color coded i.e the UV index value background color is changed based on its value.
 
 <kbd> ![Weather data displayed.](./assets/images/3.png)</kbd>
 
@@ -33,13 +33,19 @@ This application is developed using HTML, CSS and Javascript files. The features
 
 <kbd> ![Weather data displayed.](./assets/images/5.png)</kbd>
 
+- When user closes the current browser window and reopen the application then she/he will be presented with the previous search history.
+
+<kbd> ![Weather data displayed.](./assets/images/6.png)</kbd>
+
 ## Technology
 
 The web application is developed using HTML, CSS and Javascript files. 
 - The HTML file links google fonts, moment.js and jQuery for functionality of the application.
 - The CSS file contains styling elements of the application.
-- Some of the HTML and CSS elements are devloped dynamically using Javascript.
-- The Javascript file uses Moment() for current time and unix time calculations. For clarity purpose, two separate java files are created: script.js and click.js. Script.js is used for searching through the search button. Click.js file is used when searching from the search history.Also, the java files uses event listener and if/else statements for logic development. The js files also uses local storage for storing city name data.
+- Some of the HTML and CSS elements are developed dynamically using Javascript.
+- The Javascript file uses Moment() for current time and unix time calculations. For clarity purpose, two separate java files are created: script.js and click.js. Script.js is used for searching through the search button. Click.js file is used when searching from the search history. Also, the java files uses event listener, For loop, forEach loop and if/else statements for logic development. The js files also uses local storage for storing city name data.
+- The application makes API calls to fetch weather data from https://api.openweathermap.org.
+- The city names are stored in local storage for persisting the search history when browser is closed and reopened.
 - The application supports responsive layout for various screen sizes using media query in css file.
 
 ## Links
